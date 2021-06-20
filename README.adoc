@@ -4,21 +4,33 @@ Ayman Patel
 :toc: icons
 
 
+= Links
 
-== Topics
+- []
+
+= When to use Redux
+
+= When NOT to use REDUX
+
+== Alternatives to hooks
+
+- React's inbuilt `Context` API
+- https://mobx.js.org/README.html[MOBX]
+- https://xstate.js.org/[XState - JS State machine and Statecharts]: Has too much boilerplate code
+- GraohQL - *I'm suprised*
+- https://github.com/pmndrs/zustand[Github Link] & https://zustand.surge.sh/[Site Link] : Small & Scalable Bearbones state-management 
 
 
-.Topics
-|===
-| Link| Topics
-|https://www.youtube.com/watch?v=gChqkchbn9o&list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n&index=23[No BS TS #20 - Typescript/React - Setup and Properties]| Setup, Properties
-|||
-|===
+= Common React HOOKS
+
+- `useSelector`
+
+- `useDispatcher`
 
 
-## Types Learned Here
+= History
 
-1. `?` -> Optional
-1. `?:`-> Optional Chaining
-
-
+- Derived from Flux Architecture
+- Equivalents
+    - Angular Equivalent: `ngrx`
+    - Vue Equivalent: `vuex`
