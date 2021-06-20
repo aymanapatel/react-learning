@@ -5,8 +5,9 @@ Ayman Patel
 
 
 
-# 
+== Links
 
+-  https://github.com/typescript-cheatsheets/react[Github React cheatsheet]
 - React Router is implemented using this https://www.youtube.com/watch?v=J6jzDfHoj-Y[youtube link(The Nerdy Canuck)]
 
 
