@@ -16,4 +16,9 @@ Ayman Patel
 |===
 
 
+## Types Learned Here
+
+1. `?` -> Optional
+1. `?:`-> Optional Chaining
+
 
