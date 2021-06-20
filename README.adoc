@@ -1,0 +1,19 @@
+= Typrscript NOBS
+Ayman Patel
+:toc: 
+:toc: icons
+
+
+
+== Topics
+
+
+.Topics
+|===
+| Link| Topics
+|https://www.youtube.com/watch?v=gChqkchbn9o&list=PLNqp92_EXZBJYFrpEzdO2EapvU0GOJ09n&index=23[No BS TS #20 - Typescript/React - Setup and Properties]| Setup, Properties
+|||
+|===
+
+
+
