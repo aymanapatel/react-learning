@@ -1,0 +1,74 @@
+import React, {useCallback, useEffect} from 'react';
+import IPage from '../interfaces/page';
+import logging from '../config/logging';
+import '../App.css';
+
+import { Link, RouteComponentProps, withRouter } from 'react-router-dom';
+
+const Heading = ({title} : {title: string}) => <h2>{title}</h2>
+
+
+/** MOE: 
+ * Type '({ children }: { children?: ReactNode; }) => void' is not assignable to type 'FunctionComponent<{}>'.
+   Type 'void' is not assignable to type 'ReactElement<any, any> | null
+ const Box: React.FunctionComponent = ({children}) => {
+  <div
+  style={{
+    padding: "1rem",
+  }}>
+    {children}
+  </div>
+}
+ */
+
+const Box: React.FunctionComponent = ({children}) => (
+  <div
+  style={{
+    padding: "1rem",
+    fontWeight: "bold",
+    color: "#4287f5"
+
+  }}>
+    {children}
+  </div>
+)
+
+
+// onClick? : Optional
+// onClick?. : Optional chain
+const List: React.FunctionComponent<{
+  items: string[];
+  onClick?: (item:string) => void; // onClick is Optional
+}> = ({items, onClick}) => (
+  <ul>
+    {items.map((item, index) => (
+      <li key={index} onClick={() => onClick?.(item)}>  
+        {item}
+      </li>
+    ))}
+  </ul>
+)
+
+
+const LessonSetup: React.FunctionComponent<IPage & RouteComponentProps<any>> = (props) => {
+
+  useEffect(() => {
+    logging.info(`Loading ${props.name}`);
+}, [props.name])
+
+const onListClick = useCallback(
+  (item: string) => {
+    alert(item)
+  },
+  [], // dependency array
+)
+return (
+  <div className="App">
+    <Heading title="Introduction"/>
+    <Box>Hello There</Box>
+    <List items={["ayman", "sam", "altman"]} onClick={onListClick}/>
+  </div>
+);
+}
+
+export default LessonSetup;
