@@ -1,4 +1,4 @@
-= Typrscript NOBS
+= React Redux
 Ayman Patel
 :toc: 
 :toc: icons
@@ -6,7 +6,7 @@ Ayman Patel
 
 = Links
 
-- []
+- https://www.youtube.com/watch?v=9zySeP5vH9c&t=1245s[Jason Redux Creator Link]
 
 = When to use Redux
 
