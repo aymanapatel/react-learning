@@ -22,7 +22,7 @@ Ayman Patel
 |===
 
 
-## Types Learned Here
+## Things Learned Here
 
 1. `?` -> Optional
 1. `?:`-> Optional Chaining
