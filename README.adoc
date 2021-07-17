@@ -22,9 +22,3 @@ Ayman Patel
 |===
 
 
-## Things Learned Here
-
-1. `?` -> Optional
-1. `?:`-> Optional Chaining
-
-
