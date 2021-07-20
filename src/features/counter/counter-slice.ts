@@ -9,9 +9,13 @@ interface AymanCounterState {
 }
 
 const initialState: AymanCounterState = {
-  value: 0
+  value: 120
 };
 
+/**
+ * `createSlice` will automagically create state of name: `<name>/<reducer-name>` 
+ * Example: `counter/incremented`
+ */
 const counterSlice = createSlice({
   name: "counter",
   initialState,
@@ -26,13 +30,27 @@ const counterSlice = createSlice({
       }
       */
       state.value++; // IMMR Library makes it possible to do the above return immutability
-    }
+    },
     // decrement
 
     // reset
+
+    // amountAdded
+    amountAdded(state, action: PayloadAction<number>) {
+      state.value += action.payload;
+    }
   }
 });
 
-// incremented: ActionCreatorWithoutPayload<string>
-export const { incremented } = counterSlice.actions;
+
+/**
+ * Actions
+ * @param: incremented: ActionCreatorWithoutPayload<string>
+ * @param amountAdded:
+ */
+export const { incremented, amountAdded} = counterSlice.actions;
+
+/**
+ * Reducer
+ */
 export default counterSlice.reducer;
