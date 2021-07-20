@@ -30,16 +30,21 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <table>
-          <thead>
-            <tr>
-              <th><img src={redux} className="App-logo" alt="logo" width="200px" height="200px"/></th>
-              <th><img src={vite} className="App-logo" alt="logo" width="200px" height="200px"/></th>
-            </tr>
-          </thead>
-        </table>
         
+        <h2> Built using</h2>
+
+        <div>
+          <img src={redux} alt="logo" width="100px" height="100px"/>
+          &
+          <img src={vite} alt="logo" width="100px" height="100px"/>
+        </div>
+
+
+      </header>
+
+
+        <hr style={{border: "1px dashed red"}}/>
+        <div className="App-header">
         <p>
           <button onClick={handleClick}>
             count is: {count}
@@ -78,7 +83,8 @@ function App() {
           </table>
 
         </div> 
-      </header>
+        </div>
+ 
     </div>
   );
 }
